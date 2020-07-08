@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Certificate||Aman Singh</title>
+<style>
+*{
+				overflow: hidden;
+				}
+				body{
+								color:#fff;
+								}
+								#cf{
+				transform:translate(0px,-151px);
+				background-color: white;
+				margin-left:58px;
+				width:160px;
+				height:5px;
+				font-size:4px;
+				color:rgba(0,0,0,0.7);
+				text-transform:capitalize;
+				font-weight:700;
+				}
+#name{
+				transform:translate(0px,-164px);
+				background-color: white;
+				margin-left:58px;
+				width:170px;
+				height:10px;
+				font-size:9px;
+				color:#000;
+				}
+img{
+				margin:30px;
+				width:300px;
+				height:200px;
+				}
+				button{
+								background-color: orange;
+								border:2px solid green;			
+								border-radius:10px;				
+								}
+				input {
+								border:1px solid green;
+								}				
+								#m{
+												margin-left:30px;
+												}
+								#hide{
+												width:100%;
+												height:230px;
+												background-color:black;
+														transform:translate(0px,-264px);
+												}				
+</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body bgcolor="black">
+<span style="color: lime;">E4<br>Made By-Aman Singh </span>
+<p style="color:#fff;">This program is made only for education purposes.Don't miss use ☠️</p>
+<div id="m">
+Student Name: <input type="text" id="nc" placeholder="Your Name"><br><br>
+Course Name: &nbsp<input type="text" id="input" placeholder="Course Eg.Html,CSS etc"><br><br>
+<button onclick="f()">Submit</button></div>
+<img src="certificate.jpg">
+<div id="name">Your Name</div>
+<div id="cf">Course Name</div>
+<div id="hide">Your Certificate will appear here</div>
+<script>
+function f(){
+var  a=document.getElementById("nc"). value;
+var   b=document.getElementById("input"). value;
+if((a!=0) && (b!=0))
+{
+	alert(a+ " Congratulations your certificate ready take Screen shot");	document.getElementById("name").innerHTML=a;
+document.getElementById("hide").style. display="none";	document.getElementById("cf").innerHTML=b;
+	}
+	else{
+					alert("Enter Name and Course");
+					}
+	}
+</script>
+</body>
+</html>
